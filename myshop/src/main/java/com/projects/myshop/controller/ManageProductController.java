@@ -59,7 +59,7 @@ public class ManageProductController {
 				return ResponseEntity.status(HttpStatus.NOT_MODIFIED).body(new ResponseMessageClass<Object>("New Product Not Added, Please Try Again!!",HttpStatus.NOT_MODIFIED));
 			}
 		}else {		
-			return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body(new ResponseMessageClass<Object>("Please Do Login First",HttpStatus.BAD_REQUEST));
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ResponseMessageClass<Object>("Please Do Login First",HttpStatus.BAD_REQUEST));
 		}
 	}
 	
